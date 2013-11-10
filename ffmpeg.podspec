@@ -12,5 +12,5 @@ Pod::Spec.new do |s|
 
   s.source_files = '**/*.h'
   s.preserve_paths = '**/*.a'
-
+  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/ffmpeg/include' }
 end
